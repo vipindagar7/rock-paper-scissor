@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <h1 class="heading">ROCK PAPER SCISSOR</h1>
+        <div class="match">
+            <button onclick="playMatch('rock')"><img src="./images/rock.png" class="images" alt=""></button>
+            <button onclick="playMatch('paper')"><img src="./images/paper.png" class="images" alt=""></button>
+            <button onclick="playMatch('scissor')"><img src="./images/scissor.png" class="images" alt=""></button>
+        </div>
+        <div class="winner" id="winner">
+
+        </div>
+        <div class="name">
+            <h3>Your name is <strong id="userName"></strong></h3>
+            <button class="button-3" role="button" onclick="updateName()">Update Name</button>
+        </div>
+        <div class="results">
+            <table>
+                <tr>
+                    <th>Total Matches</th>
+                    <th>User Win</th>
+                    <th>Tie Matches</th>
+                    <th>Computer Win</th>
+                </tr>
+
+                <tr>
+                    <td id="totalMatches">
+                        0
+                    </td>
+                    <td id="userWins">
+                        0
+                    </td>
+                    <td id="tieMatches">
+                        0
+                    </td>
+                    <td id="computerWins">
+                        0
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="developer">
+        <h3>Developed by Vipin Dagar</h3>
+        <a href="https://wa.me/+917988402117" target="_blank">Click here to contact develper</a>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
